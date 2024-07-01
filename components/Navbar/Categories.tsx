@@ -20,8 +20,6 @@ import { IoDiamond } from 'react-icons/io5';
 import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from '../CategoryBox';
 
-type Props = {};
-
 export const categories = [
   {
     label: 'Beach',
@@ -100,7 +98,7 @@ export const categories = [
   },
 ];
 
-const Categories = (props: Props) => {
+const Categories = () => {
   const params = useSearchParams();
   const category = params?.get('category');
   const pathname = usePathname();

@@ -12,11 +12,15 @@ const CartPage = () => {
   return (
     <Container>
       <div className="p-2 grid grid-cols-9 gap-10">
-        <div className="col-span-6">
-          {cartItems.map((item) => (
-            <CartItemCard cartItem={item} />
-          ))}
-        </div>
+        {cartItems?.length ? (
+          <div className="col-span-6">
+            {cartItems?.map((item) => (
+              <CartItemCard cartItem={item} />
+            ))}
+          </div>
+        ) : (
+          <div className="col-span-6">No item in cart</div>
+        )}
         <div className="col-span-1" />
         <div>
           <p className="text-slate-600 mt-5">

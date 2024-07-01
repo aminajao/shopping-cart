@@ -27,7 +27,6 @@ const CategoryBox = ({ label, icon: Icon, selected }: Props) => {
       category: label,
     };
 
-    // If remove the category, if clicked again
     if (params?.get('category') === label) {
       delete updatedQuery.category;
     }

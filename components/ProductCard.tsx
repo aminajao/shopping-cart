@@ -10,8 +10,6 @@ interface Props {
 }
 
 const ProductCard = (props: Props) => {
-  const router = useRouter();
-
   return (
     <>
       <div className="col-span-1 group">

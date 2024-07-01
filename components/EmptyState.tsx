@@ -7,7 +7,6 @@ import { Button } from './Button';
 type Props = {
   title?: string;
   subtitle?: string;
-  showReset?: boolean;
 };
 
 const EmptyState = ({

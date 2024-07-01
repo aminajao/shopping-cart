@@ -11,8 +11,7 @@ const QtyBtn = (props: Props) => {
     <div className="flex gap-4 justify-center items-center">
       <Button
         small
-        variant="danger"
-        className="w-10 h-8 border-2 flex justify-center items-center"
+        className="w-12 h-8 border-2 flex justify-center items-center"
         onClick={props.onDecrease}
       >
         {props.qty === 1 ? (
@@ -22,12 +21,7 @@ const QtyBtn = (props: Props) => {
         )}
       </Button>
       <p>{props.qty}</p>
-      <Button
-        small
-        className="w-10 h-8"
-        variant="success"
-        onClick={props.onIncrease}
-      >
+      <Button small className="w-12 h-8" onClick={props.onIncrease}>
         +
       </Button>
     </div>

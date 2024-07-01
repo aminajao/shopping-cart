@@ -32,7 +32,7 @@ const HomePage = () => {
   if (filteredProducts.length === 0) {
     return (
       <ClientOnly>
-        <EmptyState showReset />
+        <EmptyState />
       </ClientOnly>
     );
   }
